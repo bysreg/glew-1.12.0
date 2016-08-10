@@ -10,4 +10,5 @@ build:
 
 test_script:
   - cmd: cd C:\projects\glew-1-12-0\bin\%CONFIGURATION%\Win32\
+  - cmd: glewinfo.exe
   - cmd: type glewinfo.txt
