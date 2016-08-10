@@ -6,8 +6,8 @@ configuration:
 
 build:
   parallel: true
-  project: C:\projects\glew-1.12.0\build\vc12\glewinfo.vcxproj
+  project: %APPVEYOR_BUILD_FOLDER%\build\vc12\glewinfo.vcxproj
 
 test_script:
-  - cmd: cd C:\projects\glew-1.12.0\bin\%CONFIGURATION%\Win32\
+  - cmd: cd %APPVEYOR_BUILD_FOLDER%\bin\%CONFIGURATION%\Win32\
   - cmd: type glewinfo.txt
