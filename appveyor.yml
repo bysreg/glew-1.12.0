@@ -1,7 +1,6 @@
 clone_depth: 5
 
 configuration:
-  - Debug
   - Release
 
 build:
