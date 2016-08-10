@@ -1,0 +1,13 @@
+clone_depth: 5
+
+configuration:
+  - Debug
+  - Release
+
+build:
+  parallel: true
+  project: C:\projects\glew-1.12.0\build\vc12\glewinfo.vcxproj
+
+test_script:
+  - cmd: cd C:\projects\glew-1.12.0\bin\%CONFIGURATION%\Win32\
+  - cmd: type glewinfo.txt
